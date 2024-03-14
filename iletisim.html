@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iletisim.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ARSLAN GYM|İletişim</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <h2 class="logo"><span><i class="fa-solid fa-dumbbell"></i>ARSLAN</span> GYM</h2>
+            <ul class="nav-links">
+                <li><a href="anasayfa.html"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+                <li><a href="hakkımızda.html"><i class="fa-solid fa-address-card"></i> Hakkımızda</a></li>
+                <li><a href="egitmen.html"><i class="fa-solid fa-user"></i> Eğitmenlerimiz</a></li>
+                <li><a href="galeri.html"><i class="fa-solid fa-image"></i> Galeri</a></li>
+                <li><a href="iletisim.html"><i class="fa-solid fa-comment"></i> İletişim</a></li>
+            </ul>
+            <div class="line">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="iletisim">
+        <div class="iletisim-content">
+            <div class="map-contact">
+                <form action="iletisim.php" method="post">
+                    <h3>Bizimle İletişime Geç.</h3>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="İsim" name="isim"/>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Soyisim" name="soyisim"/>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="E-Mail" name="mail"/>
+                    </div>
+                    <div class="input-box">
+
+                        <textarea name="mesaj" id="" cols="50" rows="10" placeholder="Mesajınızı Giriniz"></textarea>
+                    </div>
+                    <input type="submit" class="contact-btn" value="Gönder">
+                </form>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12028.418062317665!2d31.1208989!3d41.088563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x723c38bbd5da571f!2sF%C4%B0TBULLS%20HARD%20BODYBU%C4%B0LD%C4%B0NG%20-Akcakoca-!5e0!3m2!1str!2str!4v1672261723354!5m2!1str!2str"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="adres">
+                    <p><i class="fa-solid fa-location-dot"></i> Yalı, İnönü Cd. No:13, 81650 Akçakoca/Düzce</p><br>
+                    <p><i class="fa-solid fa-phone"></i> 0212 000 00 00</p><br>
+                    <p><i class="fa-solid fa-envelope"></i> support.arslangym@gmail.com</p>
+                </div>
+           
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=tr" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <br>
+                <br>
+                <a href="mailto:support.bggym@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:02120000000" target="_blank"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div align=center>
+                <font size="2" color="yellow">
+                    <marquee onmouseover="this.stop()" onmouseout="this.start()" width="20%">
+                        NO PAİN NO GAİN!
+                    </marquee>
+                </font>
+            </div>
+            <p class="copyright">ARSLAN GYM © 2022</p>
+            <script src="js/kayanbar.js" charset="UTF-8"></script>
+</body>
+
+</html>
+<!--
+<?php
+    include("baglanti.php");
+    if(isset($_POST["isim"],$_POST["soyisim"],$_POST["mail"],$_POST["mesaj"]))
+    {
+      $ad=$_POST["isim"];
+      $soyad=$_POST["soyisim"];
+      $email=$_POST["mail"];
+      $mesaj=$_POST["mesaj"];
+      
+       VALUES ('"$ad."','"$soyad."','"$email."','"$mesaj."');
+
+       if($baglan->query($ekle)===TRUE)
+       echo"<script>alert('Mesajınız Başarıyla Gönderilmiştir')</script>";
+    }
+
+    ?>
+-->

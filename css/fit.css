@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-right: 0%;
+  z-index: 1;
+  background-color: #000000;
+}
+
+.logo {
+  color: white;
+  font-size: 50px;
+  
+  z-index: 3;
+ 
+}
+
+span {
+    background-color: forestgreen;
+    
+  }
+
+.nav-links li {
+
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links :hover {
+  color: forestgreen;
+  transition: .3s;
+}
+
+.line {
+  display: none;
+  cursor: pointer;
+}
+
+.line .line1,
+.line .line2,
+.line .line3 {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+}
+
+.line .line2 {
+  margin: 3px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .line {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    width: 40%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: .5s ease;
+    border-radius: 5rem;
+
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+@keyframes linksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://wallpaperaccess.com/full/834264.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+
+}
+
+.intro {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  
+}
+
+.intro h1 {
+  width: 60%;
+  font-size: 50px;
+
+}
+
+.intro p {
+  display: block;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  border: none;
+  background: forestgreen;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #000000;
+  color: #4b4c4d;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+  color: forestgreen;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
